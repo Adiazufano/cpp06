@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <cfloat>
 #include <iomanip>
+#include <sstream>
 
 using std::string;
 using std::cout;

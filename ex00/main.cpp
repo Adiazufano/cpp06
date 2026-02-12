@@ -7,6 +7,7 @@ int	main(int argc, char *argv[])
 		cout << "Error: need two params" << endl;
 		return (1);
 	}
+	string p = "\t";
 	ScalarConverter::convert(argv[1]);
 	return (0);
 }
