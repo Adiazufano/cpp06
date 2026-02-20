@@ -210,6 +210,28 @@ static void	printSpecial(string param)
 	}
 }
 
+ScalarConverter::ScalarConverter()
+{
+	cout << "ScalarConverter default constructor" << endl;
+}
+
+ScalarConverter::ScalarConverter(const ScalarConverter& other)
+{
+	cout << "ScalarConverter copy constructor" << endl;
+	(void)other;
+	*this = other;
+}
+
+ScalarConverter& ScalarConverter::operator=(const ScalarConverter& other)
+{
+	return (*this);
+}
+
+ScalarConverter::~ScalarConverter()
+{
+	cout << "ScalarConverter destructor" << endl;
+}
+
 void	ScalarConverter::convert(string param)
 {
 	if (isSpecial(param))
